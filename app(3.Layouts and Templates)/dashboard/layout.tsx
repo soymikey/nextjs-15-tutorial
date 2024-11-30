@@ -1,14 +1,16 @@
-import Link from "next/link";
+"use client";
+import { useEffect } from "react";
 
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  //   console.log("Rendering DashboardLayout");
-
+  useEffect(() => {
+    console.log("Rendering DashboardLayout");
+  }, []);
   return (
-    <section style={{ backgroundColor: "orange", padding: 20 }}>
+    <section>
       <div>DashboardLayout</div>
 
       {children}

@@ -4,7 +4,7 @@
 // import Link from "next/link";
 
 // export default function Page() {
-//   return <Link href="/dashboard">Dashboard</Link>;
+//   return <Link href="/dashboard"> go to Dashboard</Link>;
 // }
 
 // useRouter() hook
@@ -29,24 +29,25 @@
 
 // export default async function Page() {
 //   const data = await getData("1000");
+//   console.log("data:", data);
 //   if (!data.id) {
 //     redirect("/dashboard");
 //   }
 
-//   return <div></div>;
+//   return <div>i am home page</div>;
 // }
 
 // Using the native History API
 
-// "use client";
+"use client";
 
-// export default function Page() {
-//   function goTo(path: string) {
-//     window.history.pushState(null, "", `${path}`);
-//   }
-//   return (
-//     <>
-//       <button onClick={() => goTo("/dashboard")}>dashboard</button>
-//     </>
-//   );
-// }
+export default function Page() {
+  function goTo(path: string) {
+    window.history.pushState(null, "", `${path}`);
+  }
+  return (
+    <>
+      <button onClick={() => goTo("/dashboard")}>dashboard</button>
+    </>
+  );
+}

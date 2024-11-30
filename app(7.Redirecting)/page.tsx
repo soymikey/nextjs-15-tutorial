@@ -1,12 +1,13 @@
 // app(7.Redirecting)
 // redirect & permanentRedirect
 // import { getData } from "@/utils";
-// import { redirect } from "next/navigation";
+// import { redirect, permanentRedirect } from "next/navigation";
 
 // export default async function Home() {
 //   const data = await getData("1000");
+//   console.log("data:", data);
 //   if (!data.id) {
-//     redirect(`/login`);
+//     // redirect(`/login`);
 //     // permanentRedirect(`/login`);
 //   }
 
@@ -14,19 +15,19 @@
 // }
 
 // useRouter() hook
-"use client";
+// "use client";
 
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
-export default function Page() {
-  const router = useRouter();
+// export default function Page() {
+//   const router = useRouter();
 
-  return (
-    <button type="button" onClick={() => router.push("/login")}>
-      go to login
-    </button>
-  );
-}
+//   return (
+//     <button type="button" onClick={() => router.push("/login")}>
+//       go to login
+//     </button>
+//   );
+// }
 
 // module.exports = {
 //   async redirects() {

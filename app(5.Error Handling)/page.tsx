@@ -1,9 +1,10 @@
+// app(5.Error Handling)
 // expected errors
 // import { getData } from "@/utils";
 
 // export default async function Home() {
-//   const data = await getData("1000");
-
+//   const data = await getData("1");
+//   console.log("data:", data);
 //   if (!data.id) {
 //     return "data is not found";
 //   }

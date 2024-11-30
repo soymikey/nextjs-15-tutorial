@@ -1,4 +1,4 @@
-// loading
+// app(6.Loading UI and Streaming)
 
 // import { getData, sleep } from "@/utils";
 
@@ -17,10 +17,10 @@
 // export default function Home() {
 //   return (
 //     <section>
-//       <Suspense fallback={<p>Loading Setting...</p>}>
+//       <Suspense fallback={<p>Loading Setting component...</p>}>
 //         <Setting />
 //       </Suspense>
-//       <Suspense fallback={<p>Loading Profile...</p>}>
+//       <Suspense fallback={<p>Loading Profile component...</p>}>
 //         <Profile />
 //       </Suspense>
 //     </section>

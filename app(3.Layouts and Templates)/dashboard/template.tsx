@@ -1,10 +1,14 @@
-// "use client";
+"use client";
+
+import { useEffect } from "react";
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  console.log("Rendering template");
+  useEffect(() => {
+    console.log("Rendering Template");
+  }, []);
   return (
-    <section style={{ backgroundColor: "lightgreen", padding: 20 }}>
-      <div>DashboardTemplate</div>
+    <section>
+      <div>dashboard template</div>
       {children}
     </section>
   );

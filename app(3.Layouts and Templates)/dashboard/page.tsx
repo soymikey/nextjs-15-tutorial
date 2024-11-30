@@ -1,7 +1,11 @@
-import React from "react";
+import Link from "next/link";
 
-export default function Page() {
+export default function DashboardPage() {
   return (
-    <div style={{ backgroundColor: "green", padding: 20 }}>Dashboard Page</div>
+    <div>
+      <Link href="/dashboard/profile">/dashboard/profile</Link> <br />
+      <Link href="/dashboard/setting">/dashboard/setting</Link>
+      Dashboard Home
+    </div>
   );
 }

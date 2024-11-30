@@ -6,7 +6,6 @@ export const revalidate = 60;
 export async function GET() {
   console.log("GET");
   const data = await getData("1");
-
   return Response.json({
     timestamp: new Date().toISOString(),
     data,

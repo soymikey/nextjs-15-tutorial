@@ -23,15 +23,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // console.log("Rendering RootLayout");
+  console.log("Rendering Layout");
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <section style={{ backgroundColor: "grey", padding: 20 }}>
-          <div>RootLayout</div>
-
-          {children}
-        </section>
+        {children}
       </body>
     </html>
   );
