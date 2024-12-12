@@ -18,4 +18,13 @@ model User {
   name      String
   email     String   @unique
   createdAt DateTime @default(now())
+  password  String
+  role      String
+}
+
+model Session {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  role      String
+  expiresAt DateTime
 }
